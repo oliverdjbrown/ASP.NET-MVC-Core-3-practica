@@ -8,8 +8,10 @@ namespace Usuarios.Controllers
 {
     public class UsuariosController : Controller
     {
-        public IActionResult Index()
+        //[HttpGet]
+        public IActionResult Index(int id)
         {
+            ViewData["id"] = id;
             return View();
         }
     }
