@@ -9,10 +9,11 @@ namespace Usuarios.Controllers
     public class UsuariosController : Controller
     {
         //[HttpGet]
-        public IActionResult Index(int id)
+        public IActionResult Index(String data, int age)
         {
-            ViewData["id"] = id;
-            return View();
+            //ViewData["id"] = data + " " + age;
+            String datos = data + " " + age;
+            return View("Index", datos);
         }
     }
 }
