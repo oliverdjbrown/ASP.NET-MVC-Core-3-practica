@@ -11,17 +11,18 @@ namespace Usuarios.Controllers
     {
         //[HttpGet]
         //[Route("/Usuarios/Oliver")]
-        [HttpGet("[controller]/[action]/{data:int}")]
+        //[HttpGet("[controller]/[action]/{data:int}")]
         public IActionResult Index(int data)
-        {          
-            return View("Index", data);
+        {
+            var url = Url.Action("Metodo", "Usuarios");
+            //return View("Index", data);
+            return Redirect(url);
         }
 
-        /*
-        public IActionResult Index()
-        {            
+        public IActionResult Metodo()
+        {
             return View();
-        }*/
+        }
     }
 }
  
