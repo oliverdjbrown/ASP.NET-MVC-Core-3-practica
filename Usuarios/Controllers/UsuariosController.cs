@@ -12,7 +12,7 @@ namespace Usuarios.Controllers
         //[HttpGet]
         //[Route("/Usuarios/Oliver")]
         //[HttpGet("[controller]/[action]/{data:int}")]
-        public IActionResult Index(int data)
+        public IActionResult Index(int data) 
         {
             //var url = Url.Action("Metodo", "Usuarios",new { age=30, name="Oliver" });
             //return View("Index", data);
