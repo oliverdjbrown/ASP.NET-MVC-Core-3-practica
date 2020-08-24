@@ -10,18 +10,18 @@ namespace Usuarios.Controllers
     public class UsuariosController : Controller
     {
         //[HttpGet]
-        [Route("/Usuarios/Oliver")]
-        [Route("[controller]/[action]/{data}")]
-        public IActionResult Index(String data, int age)
-        {            
-            String datos = data + " " + age;
-            return View("Index", datos);
+        //[Route("/Usuarios/Oliver")]
+        [HttpGet("[controller]/[action]/{data:int}")]
+        public IActionResult Index(int data)
+        {          
+            return View("Index", data);
         }
 
+        /*
         public IActionResult Index()
         {            
             return View();
-        }
+        }*/
     }
 }
  
