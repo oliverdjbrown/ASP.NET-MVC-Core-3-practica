@@ -20,9 +20,9 @@ namespace Usuarios.Controllers
             return Redirect(url);
         }
         [HttpGet("[controller]/[action]", Name ="Oliver")]
-        public IActionResult Metodo(int age, string name)
+        public IActionResult Metodo(int code)
         {
-            var data = $"Nombre {name} edad {age}";
+            var data = $"Codigo de estado {code}";
             return View("Index", data);
         }
     }
