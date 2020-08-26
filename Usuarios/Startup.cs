@@ -45,8 +45,8 @@ namespace Usuarios
         {
             if (env.IsDevelopment())
             {
-                //app.UseDeveloperExceptionPage();
-                //app.UseDatabaseErrorPage();
+                app.UseDeveloperExceptionPage();
+                app.UseDatabaseErrorPage();
                 //app.UseExceptionHandler(options => {
                 //    options.Run(async context => {
                 //        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
@@ -59,7 +59,7 @@ namespace Usuarios
                 //        }
                 //    });
                 //});
-                app.UseExceptionHandler("/Home/Error");
+                //app.UseExceptionHandler("/Home/Error");
             }
             else
             {
