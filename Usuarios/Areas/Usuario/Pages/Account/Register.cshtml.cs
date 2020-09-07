@@ -37,5 +37,10 @@ namespace Usuarios.Areas.Usuario.Pages.Account
             [Compare("Password", ErrorMessage = "Las contraseñas no coinciden")]
             public string ConfirmPassword { get; set; }
         }
+        public IActionResult OnPost()
+        {
+            var data = Input;
+            return Page();
+        }
     }
 }
