@@ -18,9 +18,16 @@
                 <div class="card-body">
                     <form method="post">
                         <div class="form-group">
-                            <label asp-for="Input.Email"></label>
-                            <input asp-for="Input.Email" class="form-control"/>
+                            <input asp-for="Input.Email" placeholder="Email" class="form-control" />
                             <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input asp-for="Input.Password" placeholder="Password" class="form-control" />
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input asp-for="Input.ConfirmPassword" placeholder="ConfirmPassword" class="form-control" />
+                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                         </div>
                     </form>
                 </div>
